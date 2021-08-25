@@ -1,0 +1,10 @@
+.portfolio__container {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 520px) {
+  .portfolio__container {
+    flex-direction: column;
+  }
+}

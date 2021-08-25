@@ -1,0 +1,11 @@
+.elements__card-image {
+  width: 100%;
+  height: 100%;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.elements__card-image:hover {
+
+  transform: scale(1.1);
+}

@@ -1,0 +1,17 @@
+.elements__text-container {
+  background: #FFF;
+  border-radius: 0 0 10px 10px;
+  width: 239px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 22px 24px 21px;
+  gap: 25px;
+}
+
+@media (max-width: 600px) {
+  .elements__text-container {
+    padding-top: 24px;
+    padding-bottom: 26px;
+  }
+}

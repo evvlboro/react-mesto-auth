@@ -1,0 +1,19 @@
+.portfolio__hover{
+  background: black;
+  opacity: 0;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.portfolio__hover:hover {
+  opacity: 0.8;
+  transition: opacity .4s;
+}

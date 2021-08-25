@@ -1,0 +1,14 @@
+.portfolio__hover-button{
+  background-image: url('../../../images/pancil.png');
+  background-color: transparent;
+  border: none;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+

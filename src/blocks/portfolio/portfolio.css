@@ -1,0 +1,22 @@
+.portfolio {
+  max-width: 880px;
+  margin: 0 auto;
+  padding-top: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1024px){
+  .portfolio {
+    padding-right: 27px;
+    padding-left: 27px;
+  }
+}
+
+@media (max-width: 720px) {
+  .portfolio {
+    flex-direction: column;
+  }
+}

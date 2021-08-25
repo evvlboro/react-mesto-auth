@@ -1,0 +1,35 @@
+.portfolio__button-edit {
+  margin-bottom: 7px;
+  margin-left: 18px;
+  margin-right: 24px;
+  grid-area: button;
+  width: 24px;
+  height: 24px;
+  background-image: url('../../../images/pancil.png');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.portfolio__button-edit:hover {
+  opacity: .6;
+  transition: opacity .3s;
+}
+
+.portfolio__button-edit:focus {
+  outline: none;
+}
+
+@media (max-width: 520px) {
+  .portfolio__button-edit {
+    margin-left: 10px;
+    margin-bottom: 7px;
+    width: 18px;
+    height: 18px;
+    background-size: 7.5px;
+  }
+}

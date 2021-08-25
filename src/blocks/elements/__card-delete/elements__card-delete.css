@@ -1,0 +1,22 @@
+.elements__card-delete {
+  width: 18px;
+  height: 19.3px;
+  background-image: url('../../../images/trash.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+}
+
+.elements__card-delete:hover {
+  opacity: .6;
+  transition: opacity .3s;
+}
+
+.elements__card-delete:focus {
+  outline: none;
+}

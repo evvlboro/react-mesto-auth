@@ -1,0 +1,30 @@
+.portfolio__button-add {
+  width: 150px;
+  height: 50px;
+  background-image: url('../../../images/plus.png');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+  border: 2px solid #FFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.portfolio__button-add:hover {
+  opacity: .6;
+  transition: opacity .3s;
+}
+
+.portfolio__button-add:focus {
+  outline: none;
+}
+
+@media (max-width: 720px) {
+  .portfolio__button-add {
+    margin-top: 32px;
+    width: 282px;
+    background-size: 16px;
+  }
+}

@@ -1,0 +1,11 @@
+.portfolio__photo-info {
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 520px) {
+  .portfolio__photo-info {
+    margin-left: 25px;
+  }
+}
+

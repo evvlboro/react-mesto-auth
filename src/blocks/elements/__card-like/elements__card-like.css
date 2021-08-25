@@ -1,0 +1,19 @@
+.elements__card-like {
+  width: 25px;
+  height: 19px;
+  background-image: url('../../../images/heart.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.elements__card-like:hover {
+  opacity: .6;
+  transition: opacity .3s;
+}
+
+.elements__card-like:focus {
+  outline: none;
+}
