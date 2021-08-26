@@ -1,0 +1,16 @@
+.header__link {
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all .3s;
+  line-height: 22px;
+  line-height: 1;
+}
+
+.header__link:hover {
+  opacity: .6;
+}
+
+.header__link:visited, .header__link:link {
+  color: white;
+}

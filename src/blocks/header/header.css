@@ -5,6 +5,9 @@
   box-sizing: border-box;
   padding-bottom: 37px;
   border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 425px) {

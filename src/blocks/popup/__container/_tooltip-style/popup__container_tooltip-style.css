@@ -1,0 +1,15 @@
+.popup__container_tooltip-style {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 36px 60px;
+  box-sizing: border-box;
+  max-width: 430px;
+}
+
+@media (max-width: 520px) {
+  .popup__container {
+    padding: 18px 50px;
+    max-width: clamp(280px, 90vw, 430px);
+  }
+}

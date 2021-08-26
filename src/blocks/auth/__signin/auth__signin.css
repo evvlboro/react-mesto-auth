@@ -1,0 +1,7 @@
+.auth__signin {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 17px;
+}
