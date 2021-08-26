@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, useHistory, Redirect } from 'react-router-dom';
+import { Route, Switch, useHistory } from 'react-router-dom';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
@@ -65,7 +65,7 @@ function App() {
 
   React.useEffect(() => {
     if (loggedIn) {
-      history.push('/')
+      history.push('/');
     }
   }, [loggedIn, history])
 
@@ -183,18 +183,18 @@ function App() {
               }
             })
           localStorage.setItem('jwt', data.token);
-          history.push('/');
           InfoTooltipParams({ icon: tooltipSuccess, caption: 'Вы успешно авторизовались!' });
           openInfoTooltipPopup(true);
+          history.push('/');
         }
       }).catch(err => {
-        InfoTooltipParams({ icon: tooltipDeny, caption: 'Что-то пошло не так!\n Попробуйте еще раз.' });
+        InfoTooltipParams({ icon: tooltipDeny, caption: 'Что-то пошло не так! Попробуйте еще раз.' });
         openInfoTooltipPopup(true);
         console.log(err);
       });
   };
 
-  function tokenCheck () {
+  function tokenCheck() {
     if (localStorage.getItem('jwt')) {
       let jwt = localStorage.getItem('jwt');
       auth.getContent(jwt)
@@ -224,8 +224,7 @@ function App() {
               cards={cards}
               onCardClick={handleCardClick}
               onCardLike={handleCardLike}
-              onCardDelete={handleCardDelete}
-            />
+              onCardDelete={handleCardDelete} />
             <Route exact path='/sign-up'>
               <Register onRegister={handleRegister} />
             </Route>
@@ -233,13 +232,12 @@ function App() {
               <Login onLogin={handleLogin} />
             </Route>
           </Switch>
-
           <EditAvatarPopup isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} onUpdateAvatar={handleUpdateAvatar} />
           <EditProfilePopup isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} onUpdateUser={handleUpdateUser} />
           <AddPlacePopup isOpen={isAddPlacePopupOpen} onClose={closeAllPopups} onAddPlace={handleAddPlaceSubmit} />
           <ImagePopup card={selectedCard} onClose={closeAllPopups} />
           <InfoTooltip infoMessage={infoMessage} isOpen={isInfoToolTip} onClose={closeAllPopups} />
-          { loggedIn && <Footer /> }
+          {loggedIn && <Footer />}
         </div>
       </div>
     </CurrentUserContext.Provider>

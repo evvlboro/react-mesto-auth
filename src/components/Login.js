@@ -21,7 +21,7 @@ function Login({ onLogin }) {
   }
 
   return (
-    <section className="auth">
+    <section className="auth login">
       <h2 className="auth__title">Вход</h2>
       <form
         className="auth__form"

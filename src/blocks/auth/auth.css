@@ -1,6 +1,8 @@
 .login {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  margin: 60px auto 0;
+  max-width: 358px;
 }

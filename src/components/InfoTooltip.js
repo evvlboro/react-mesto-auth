@@ -1,8 +1,13 @@
 import React from 'react';
 
 function InfoTooltip({ isOpen, onClose, infoMessage }) {
+  function handleClose(e) {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  }
   return (
-    <div className={`popup ${isOpen && "popup_opened"}`}>
+    <div className={`popup ${isOpen && "popup_opened"}`} onClick={handleClose}>
       <div className="popup__container popup__container_tooltip-style">
         <img className="popup__tooltip-img" src={infoMessage.icon} alt="#" />
         <h2 className="popup__caption">{infoMessage.caption}</h2>
