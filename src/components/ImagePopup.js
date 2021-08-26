@@ -5,7 +5,7 @@ function ImagePopup(props) {
     }
   }
   return (
-    <div className={`popup ${Object.keys(props.card).length === 0 ? '' : 'popup_opened'}`} id="popup_img" onClick={handleClose}>
+    <div className={`popup ${Object.keys(props.card).length === 0 ? '' : 'popup_opened'}`} id="popup_img" onMouseUp={handleClose}>
       <div className="popup__container">
         <button
           type="button"

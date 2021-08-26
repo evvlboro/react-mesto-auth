@@ -196,7 +196,7 @@ function App() {
 
   function tokenCheck() {
     if (localStorage.getItem('jwt')) {
-      let jwt = localStorage.getItem('jwt');
+      const jwt = localStorage.getItem('jwt');
       auth.getContent(jwt)
         .then(res => {
           if (res) {
@@ -207,6 +207,18 @@ function App() {
         .catch(err => console.log(err));
     }
   };
+
+  React.useEffect(() => {
+    const closeByEscape = (e) => {
+      if (e.key === 'Escape') {
+        closeAllPopups();
+      }
+    }
+
+    document.addEventListener('keydown', closeByEscape)
+
+    return () => document.removeEventListener('keydown', closeByEscape)
+  }, []);
 
   return (
     <CurrentUserContext.Provider value={currentUser}>

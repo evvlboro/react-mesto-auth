@@ -7,7 +7,7 @@ function InfoTooltip({ isOpen, onClose, infoMessage }) {
     }
   }
   return (
-    <div className={`popup ${isOpen && "popup_opened"}`} onClick={handleClose}>
+    <div className={`popup ${isOpen && "popup_opened"}`} onMouseUp={handleClose}>
       <div className="popup__container popup__container_tooltip-style">
         <img className="popup__tooltip-img" src={infoMessage.icon} alt="#" />
         <h2 className="popup__caption">{infoMessage.caption}</h2>
